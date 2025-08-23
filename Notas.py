@@ -99,6 +99,42 @@ while contador < 5:
     print('Oi')
     contador +=1
 
+    #1
+
+    contador = 0
+
+    while contador < 5:
+        print('Oi')
+        contador+=1
+
+    #2
+    resposta = 'S'
+
+    while resposta != 'N':
+        print('?')
+        resposta = input('Deseja Continuar? [S/N]: ').strip().upper()[0]
+
+
+    # while true
+
+    while True:
+    n = int(input('Digite algo [999 para parar]: ')
+
+    if n == 999:
+        break
+
+    while True:
+        opcao = int(input('1. OI'
+                          '\n 2. Olá'
+                          '\n 3. Bem-Vindo'
+                          '\n4. Sair ----> '))
+        if opcao == 1:
+            print('OI')
+        elif opcao == 2:
+            print('Olá')
+        elif opcao == 4:
+            print('Até logo')
+            break
 '''
 
 
