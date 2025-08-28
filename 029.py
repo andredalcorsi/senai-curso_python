@@ -8,16 +8,15 @@ soma = 0
 
 while True:
 
-    n = int(input('Digite um número: '))
-    contador+=1
-
-    soma = n + soma
-
-    if n == 0000:
+    n = input('Digite um número: ')
+    if n == '0000':
         break
 
+    soma += int(n)
+
+    contador += 1
 
 
-print(f'Quantidade de números digitados: {contador-1}\n'
+print(f'Quantidade de números digitados: {contador}\n'
       f'A soma entre os números digitados é igual a {soma}')
 
