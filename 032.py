@@ -22,9 +22,18 @@ while True:
     
     if contador == 0 or preco_prod < mais_barato: 
         mais_barato = preco_prod
-        
+        nome_barato = nome_prod
+
     contador+=1
-    
-    print(f'Total Gasto na Compra: {total_compra}')
-    print(f'Quantos produtos custam mais de mil reias: {mais_mil}')
-    print(f'Produto mais barato: {mais_barato}')
+
+    continuar = ' '
+
+    while continuar not in 'SN':
+        continuar = input('Deseja continuar? [S/N]: ').strip().upper()[0]
+    if continuar == 'N':
+        break
+
+print('-------------------------------------------------------------------------------------------')
+print(f'Total Gasto na Compra: R${total_compra}')
+print(f'Quantos produtos custam mais de mil reias: {mais_mil} produtos.')
+print(f'Produto mais barato: {nome_barato}, custando R${mais_barato}.')
